@@ -3,7 +3,7 @@ const toggle = document.querySelector('.toggle');
 const icon = document.querySelector('.fa-bars');
 const links = document.querySelector("a.link-item");
 const header = document.getElementById("header");
-const inputs =document.querySelector('input');
+
 
 
  // EVENT CLOSE MENU
@@ -36,6 +36,9 @@ links.classList.add("active");
 
  // FUNCTION CLOSE MENU
 function closeMenu(){
+    
+        if (window.innerWidth <= 800) {
+         
     if(menu.style.display =="block"){ 
         menu.style.display ="none";
         // REPLACE ICON
@@ -49,10 +52,6 @@ function closeMenu(){
     }
     }
 
- function removePlace(){
-    inputs.val('');
-
- }   
-
+}
 
 
