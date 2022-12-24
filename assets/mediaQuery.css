@@ -12,9 +12,11 @@
 .subtitle{
   font-size: 1.8rem;
   }
-  
+  .title{
+  font-size: 4.5;
+  }
   .section-descripcion{
-  font-size:1.5rem;
+  font-size:1rem;
   }
     
 
@@ -244,7 +246,6 @@ max-width:4.5rem;
         flex-direction: column;
       box-shadow: none;
       margin: 0 auto;
-      padding: 0;
       
     }
       #contact .section-img img{
@@ -298,7 +299,40 @@ max-width:4.5rem;
       min-height: max-content;
       position: relative;
       }
+      
+      .navbar{
+        top: 0;
+       z-index: 50;
+        width: 100%;
+        position: fixed;  
+       align-items: center;
+       justify-content: flex-start;
+        flex-direction: column;
+        background-color: black;  
+      }
+      .menu{
+
+        display: none;
+        width: 100%;
+        min-height: 100vh;
+        text-align: center;
+      }
+      
+      .menu li{
+       margin:4rem 0;
+       width: 100%;
     
+      }
+      .menu li a{
+      font-size: 2.2rem;
+       color:var(--blanco);
+       padding: 10px 20px;
+       text-transform: uppercase;
+       }
+
+      
+      
+
       
       
     /*About Section*/
