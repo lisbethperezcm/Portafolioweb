@@ -6,10 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="https://kit.fontawesome.com/4ec4f15ca5.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> <script src="https://kit.fontawesome.com/4ec4f15ca5.js" crossorigin="anonymous"></script>
+ 
+
   <link rel="stylesheet" href="/assets/style.css">
   <link rel="stylesheet" href="/assets/mediaQuery.css">
   <script type="text/javascript" src="app.js" defer></script>
+
+
   <title>Lisbeth Web developer</title>
 
 </head>
@@ -30,12 +34,12 @@
 
         </div>
 
-        <ul id="menu" class="menu nav-menu-novisible">
-          <li class=""><a href="#" class="active link-item">Home</a></li>
-          <li><a href="#about" class="link-item">About me</a></li>
-          <li><a href="#services" class="link-item">Services</a></li>
-          <li><a href="#portfolio" class="link-item">Portfolio</a></li>
-          <li><a href="#contact" class="link-item">Contact</a></li>
+        <ul id="menu" class="menu">
+          <li class=""><a href="#" id="link1" onclick="activeNavbar(this.id)" class="link-item">Home</a></li>
+          <li><a href="#about"  id="link2" onclick="activeNavbar(this.id)" class="link-item">About me</a></li>
+          <li><a href="#services"  id="link3" onclick="activeNavbar(this.id)"  class="link-item">Services</a></li>
+          <li><a href="#portfolio" id="link4" onclick="activeNavbar(this.id)" class="link-item">Portfolio</a></li>
+          <li><a href="#contact" id="link5" onclick="activeNavbar(this.id)" class="link-item">Contact</a></li>
         </ul>
 
       </nav>
@@ -105,7 +109,7 @@
                
               </p>
               <p class="section-descripcion">
-                I'm passionate about tecnology!! . I'm proactive person and results 
+                I'm passionate about tecnology!! . I'm a proactive person and results 
                 oriented.
               </p>
               <a href="#" type="button" class="button cta">Download CV <i class="fa-solid fa-circle-down"></i> </a>
@@ -181,7 +185,7 @@
             <div class="icon s-center"><i class="fa-solid fa-file-circle-check"></i></div>
             <h2 class="item-title subtitle">Quality Analyst</h2>
             <p class="section-descripcion s-center">I have experience working as QA Analyst, I have knowledge
-              about Testing Manual and Testing Automation.
+              about Manual Testing and Automation Testing.
 
             </p>
             <h1 class="skill-title">Skills</h1>
@@ -334,7 +338,7 @@
                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja un mensaje aqui"></textarea> 
                            </p>	  								
         
-          <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+          <button type="submit" class="button" name="enviar_formulario" id="enviar"><p>ENVIAR</p></button>
 
           
     </form>
