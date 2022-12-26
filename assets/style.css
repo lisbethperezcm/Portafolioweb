@@ -4,12 +4,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 html{
     font-size: 10px;
      font-family: "Poppins", sans-serif;
     background:#F5F5F5;  
-    outline: none;
+    
 }
 
 
@@ -60,7 +61,7 @@ html{
 .button{
     display: inline-block;
     padding:5px 10px;
-    color:white ;
+    color:var(--blanco);
     border-radius: 120px;
     text-transform: uppercase;
     font-size:1rem;
@@ -94,6 +95,7 @@ a{
     z-index: 50;
     transition:0.3s ease;
     transition-property:background-color, color;
+   
   }
   
 
@@ -106,12 +108,13 @@ line-height: 1.5rem;
 margin: 0 auto;
 z-index: 50;
 
+
 }
 .brand {
 
 }
 .brand h2{
-    color:#66FCF1;
+    color:var(--primario);
     font-size:3.5rem;
 }
 .brand span{
@@ -139,7 +142,7 @@ z-index: 50;
 
     color: var(--primario);
 }
-.menu .active{
+.active{
     color: var(--primario);
     border-bottom:2px solid #50BFC3;
   
@@ -148,6 +151,7 @@ z-index: 50;
     color: var(--blanco);
     background: none;
     border: none;
+    outline: none;
     font-size: 30px;
     padding: 0 20px;
     line-height: 60px; 
@@ -164,7 +168,7 @@ z-index: 50;
 
 /****           NO Mas                                   */
 .bg-gray{
-    background-color:#50BFC3;
+    background-color:var(--primario2);
     color: #111111;
 }
 
@@ -372,7 +376,7 @@ border: 2px solid #1f2c38;
 
  
 }
-#about .cta:hover, #hero .linkd:hover{
+#about .cta:hover, #hero .linkd:hover,#contact button:hover{
 color: var(--blanco);
 background-color:var(--primario3);
 Box-shadow: #555 2px 2px 2px;
@@ -893,51 +897,49 @@ background: url(/assets/img/img1.jpg);
     #contact label{
       display: block; 
       float: center; 
-      font-size:1.6rem;
+      font-size:1.5rem;
       	
   
     }
     #contact input{
-        background-color:hwb(240 86% 10%); 
-      width:400px; 
+       width:400px; 
       height: 40px; 
-      border: none; 
-      box-shadow: #c4bebe 0.2px 0.3px 2px 0.1px;
-      padding-left: 10px;
-      margin: 10px 0 15px 0;  
-      outline: none;
-      border-radius: 6px;
+    
     }
-    #contact input::placeholder{
-       color:#6b6c6c;
+    #contact input::placeholder ,textarea::placeholder{
+       color:var(--gris);
        text-transform: uppercase;
       }
     textarea{ 
       width: 400px; 
       height: 100px; 
-      border: none; 
-      outline: none;
-      background-color:hwb(240 86% 10%); 
-      margin: 10px 0 15px 0;  
-      padding-left: 10px;
-      padding-top: 15px;
-      border-radius: 6px; 
-      text-transform: uppercase;
-      box-shadow: #7c7676 0.2px 0.3px 2px 0.1px;
+    }
+
+    textarea ,input{
+        background-color:hwb(240 86% 10%);  
+        border: none; 
+        box-shadow: #c4bebe 0.2px 0.3px 2px 0.1px;
+      padding: 10px 15px;
+        margin: 10px 0 15px 0;  
+        outline: none;
+        border-radius: 6px;
+        text-transform: uppercase;
+        font-size:1.2rem;
     }
     
-    button{
+   /* button{
       height: 35px; 
       padding:0 5px 0 5px;	
       margin-bottom: 20px; 
       margin-top: 10px; 	
       text-transform: uppercase;
-      background-color: #50BFC3; 
+      background-color:var(--primario2); 
       border:1px solid #50BFC3;
       border-radius: 10px;	
       width: 100px;   
       cursor: pointer;
     }
+*/
     button p{
         font-weight: bolder;
     }
@@ -963,7 +965,7 @@ align-items: center;
 #footer a:hover{
     color:var(--blanco);
 }
-
+/*
 aside {
     width: 30%;
     height: 100vh;
@@ -975,4 +977,4 @@ aside {
   }
 
 
-      
+      */
