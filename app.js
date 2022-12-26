@@ -1,7 +1,7 @@
 const menu = document.querySelector('.menu');
 const toggle = document.querySelector('.toggle');
 const icon = document.querySelector('.fa-bars');
-const links = document.querySelector("a.link-item");
+
 const header = document.getElementById("header");
 
 
@@ -10,12 +10,17 @@ const header = document.getElementById("header");
 toggle.addEventListener("click",closeMenu);
 menu.addEventListener("click", closeMenu);
 
+
+
+
+
  // EVENT CHANGE NAVBAR BACKGROUND
 document.addEventListener("scroll",backgroundNavbar);
-inputs.addEventListener("click", removePlace);
+/*inputs.addEventListener("click", removePlace);*/
 
 // EVENT ADD COLOR ACTIVE NAVBAR
-menu.addEventListener("click", activeNavbar);
+/*
+menu.addEventListener("click", activeNavbar);*/
 links.addEventListener("click",activeNavbar);
 
 
@@ -30,13 +35,34 @@ function backgroundNavbar(){
 }
 
  // FUNCTION NAVBAR ACTIVE
-function activeNavbar(){
-links.classList.add("active");
-}
+ function activeNavbar(link){
+    var links = document.querySelectorAll('.link-item');
+    links.forEach(function(item) {
+        if (item.id === link) {
+          item.classList.add("active");
+        }else{
+            item.classList.remove("active");
+        }
+    })
+    
+ 
+    }
+  
+ /*
+    var links =document.querySelectorAll('.link-item')
+    for(var i=0;i<test.length;i++)
+    {
+       if(links[i].id==link){
+        links[i].classList.add("active");
+       }else{
+        links[i].classList.remove("active");
+       }
+        }; 
+  */
 
  // FUNCTION CLOSE MENU
 function closeMenu(){
-    
+   
         if (window.innerWidth <= 800) {
          
     if(menu.style.display =="block"){ 
