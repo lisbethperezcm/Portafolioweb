@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> <script src="https://kit.fontawesome.com/4ec4f15ca5.js" crossorigin="anonymous"></script>
+ 
+
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/mediaQuery.css">
+  <script type="text/javascript" src="app.js" defer></script>
+
+
+  <title>Lisbeth Web developer</title>
+
+</head>
+
+<body>
+  <!-- H E R O  S E C T I O N-->
+  <Section id="hero">
+    <header id="header" class="header">
+
+      <nav class="navbar">
+        <div class="brand">
+          <h2 class="icon"><span>L</span>P</h2>
+        
+
+          <button class="toggle">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+        </div>
+
+        <ul id="menu" class="menu">
+          <li class=""><a href="#" id="link1" onclick="activeNavbar(this.id)" class="link-item">Home</a></li>
+          <li><a href="#about"  id="link2" onclick="activeNavbar(this.id)" class="link-item">About me</a></li>
+          <li><a href="#services"  id="link3" onclick="activeNavbar(this.id)"  class="link-item">Services</a></li>
+          <li><a href="#portfolio" id="link4" onclick="activeNavbar(this.id)" class="link-item">Portfolio</a></li>
+          <li><a href="#contact" id="link5" onclick="activeNavbar(this.id)" class="link-item">Contact</a></li>
+        </ul>
+
+      </nav>
+    </header>
+
+
+    <div class="hero container">
+
+      <div>
+        <h1>Hello, <span class="name">I'm Lisbeth...</span> </h1>
+
+      </div>
+      <div>
+
+        <div class="loader">
+          <div class="min-loader">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </Section>
+  <!-- E N D  H E R O  S E C T I O N ---------------->
+
+
+
+
+
+  <!-- A B O U T  S E C T I O N
+             <div class="section-img">
+
+
+</div>
+ 
+    <div class="about-bool"></div>    
+        <div class="about-bool2"></div> 
+  -->
+  <section id="about">
+
+    <div class="about container">
+
+      <div class="section-img">
+
+        <img src="assets/services2.svg" class="about-img" alt="" srcset="">
+
+
+      </div>
+
+      <div class="about-description">
+
+        <div class="about-top">
+          <h1 class="section-title title">ABOUT ME</h1>
+          <div id="imgabout" class="img-aboutme">
+            <img src="assets/me.png" class="img-me" alt="" srcset="">
+          </div>
+        </div>
+
+        <div class="about-bottom">
+
+          <div class="about-info">
+            <h1 class="title-info subtitle">I'm Software Developer & Quality Assurance</h1>
+            <div class="section-descripcion">
+              <p class="section-descripcion">
+                My name is Lisbeth Perez, I graduated as Software Developer.
+             I specialized in the area of ​​quality assurance as QA Analyst.
+               
+              </p>
+              <p class="section-descripcion">
+                I'm passionate about tecnology!! . I'm a proactive person and results 
+                oriented.
+              </p>
+              <a href="#" type="button" class="button cta">Download CV <i class="fa-solid fa-circle-down"></i> </a>
+              <a href="https://www.linkedin.com/in/lisbeth-p%C3%A9rez-cm07/" type="button"
+                class="button cta linkd">Perfil <i class="fa-solid fa-eye"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- E N D A B O U T  S E C T I O N ---------------->
+
+  <!-- S E R V I C E S   S E C T I O N-->
+  <section id="services">
+
+    <div class="services container">
+
+      <div class="section-img">
+        <img src="assets/developer3.svg" alt=" " srcset="" class="img-services">
+      </div>
+
+      <div class="services-description">
+        <div class="services-top">
+          <h1 class="section-title title">SERVICES</h1>
+          <p></p>
+        </div>
+        <div class="services-bottom">
+          <div class="service-item">
+
+            <div class="icon s-center"> <i class="fa-solid fa-laptop-code"></i></div>
+            <h2 class="item-title subtitle">Web Developer</h2>
+            <p class="section-descripcion s-center">I have experience programing projects with PHP, HTML, CSS and
+              Javascript.
+            </p>
+
+
+            <h1 class="skill-title">Skills</h1>
+
+            <div class="skills s-center">
+
+              <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <h1>HTML</h1>
+              </div>
+
+              <div class="skill-item">
+                <i class="fab fa-css3"></i>
+                <h1>CSS</h1>
+              </div>
+
+              <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <h1>JAVASCRIPT</h1>
+              </div>
+
+              <div class="skill-item">
+                <i class="fab fa-php"></i>
+                <h1>PHP</h1>
+              </div>
+
+              <div class="skill-item">
+                <i class="fa-solid fa-database"></i>
+                <h1>Database</h1>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="service-item">
+
+            <div class="icon s-center"><i class="fa-solid fa-file-circle-check"></i></div>
+            <h2 class="item-title subtitle">Quality Analyst</h2>
+            <p class="section-descripcion s-center">I have experience working as QA Analyst, I have knowledge
+              about Manual Testing and Automation Testing.
+
+            </p>
+            <h1 class="skill-title">Skills</h1>
+
+            <div class="skills s-center">
+
+              <div class="skill-item">
+                <i class="fa-solid fa-file-lines"></i>
+                <h1>FUNCTIONAL TESTING</h1>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-file-pen"></i>
+                <h1>TEST CASES</h1>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h1>EXPLORATORY TESTING</h1>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-bug-slash"></i>
+                <h1>BUG REPORTS</h1>
+              </div>
+
+              <div class="skill-item">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                <h1>AUTOMATION TESTING</h1>
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+ <!-- E N D  S E R V I C E S   S E C T I O N ---------------->
+ 
+
+  <!-- P O R T F O L I O   S E C T I O N-->
+  <section id="portfolio">
+    <div class="portfolio container">
+      <div class="portfolio-top">
+        <h1 class="section-title title">PROJECTS</h1>
+
+      </div>
+
+      <div class="portfolio-bottom">
+
+        <div class="porftolio-items">
+
+
+          <div class="item">
+            <div class="imgItem">
+              <img src="./assets/img/qaBlog.png" alt="" srcset="">
+            </div>
+            <div class="item-info">
+
+              <h1 class="title-item">Blog Analista Qa</h1>
+              <p>En este blog realizado los analisis a diferentes sitios web.</p>
+              <div class="item-buttons">
+                <a href="#" class="item-button">Demo <i class="fa-solid fa-earth-americas"></i> </a>
+                <a href="#" class="item-button">codigo <i class="fa-brands fa-github"></i> </a>
+              </div>
+            </div>
+          </div>
+         
+
+    
+
+
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+  </section>
+
+
+  <!-- E N D  P O R T F O L I O   S E C T I O N
+---------------->
+  
+
+<!-- C O N T A C T  S E C T I O N -->
+
+  <section id="contact">
+
+    <div class="contact container">
+     
+      
+
+ <div class="contact-bottom">
+ 
+  <div class="section-img">
+
+   <img src="assets/contact.svg" alt="" srcset="">
+
+
+  </div>
+
+  <div class="contact-form">
+    <h1 class="section-title title">CONTACT ME</h1>
+    <form action="sendmessage" method="post">				
+
+      
+          <p>
+            <label for="nombre" class="colocar_nombre"><h1>NAME</h1>
+             
+            </label>
+              <input type="text" name="name" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+          </p>
+        
+          <p>
+            <label for="email" class="colocar_email"><h1>EMAIL</h1>
+            
+            </label>
+              <input type="email" name="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+          </p>
+      
+  
+          <p>
+            <label for="asunto" class="colocar_asunto"><h1>SUBJECT</h1>
+              
+            </label>
+              <input type="text" name="subject" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+          </p>		
+        
+          <p>
+            <label for="mensaje" class="colocar_mensaje"> <h1>MESSAGE</h1>
+             
+            </label>                     
+                               <textarea name="message" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja un mensaje aqui"></textarea> 
+                           </p>	  								
+        
+          <button type="submit" class="button" name="enviar_formulario" id="enviar"><p>ENVIAR</p></button>
+
+          
+    </form>
+
+
+
+</div>
+</div>
+
+      
+     </div>
+      
+
+
+  </section>
+
+  <!-- E N D  C O N T A C T  S E C T I O N ---------------->
+
+
+ 
+
+
+<!-- F O O T E R  S E C T I O N -->
+
+  <footer id="footer">
+    <div class="footer">
+      <p class="s-center">Copyright @2022 -</p><p>  Designed by <a href="#about">Lisbeth Perez</a></p>
+
+    </div>
+
+  </footer>
+
+   <!-- E N D  F O O T E R  S E C T I O N---------------->
+</body>
+
+</html>
