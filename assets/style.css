@@ -55,8 +55,8 @@ text-transform: uppercase;
     border-radius: 100%;
     position: absolute;
      margin: 0 auto;
-    animation: girar 1.5s linear infinite;
-  
+   animation: girar 1.5s linear infinite;
+
 }
 
 @keyframes girar{
