@@ -8,12 +8,12 @@ const header = document.getElementById("header");
 
 
  // EVENT LOANDING
+
 if (hero.style.visibility== "false") {
 
-}{
+}else{
     contenedor.style.display="none";
 }
-
 
  // EVENT CLOSE MENU
 toggle.addEventListener("click",closeMenu);
@@ -46,7 +46,7 @@ function backgroundNavbar(){
  // FUNCTION NAVBAR ACTIVE
  function activeNavbar(link){
     var links = document.querySelectorAll('.link-item');
-    contenedor.style.display="flex";
+   
     links.forEach(function(item) {
         if (item.id === link) {
           item.classList.add("active");
