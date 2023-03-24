@@ -8,7 +8,8 @@ const header = document.getElementById("header");
 
 
  // EVENT LOANDING
-if (hero.style.visibility == "false"){
+
+if (hero.style.visibility== "false") {
 
 }else{
     contenedor.style.display="none";
