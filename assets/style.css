@@ -26,7 +26,49 @@ html{
 
    
 }
+#contenedor-load{
+    background-color:#1f2c38;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    -webkit-transition: all 1 ease;
+    transition: all 1 ease;
+    -o-transition: all 1 ease;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    opacity: 1;
+    
+}
+#contenedor-load h1{
+text-transform: uppercase;
+}
+#load{
+    top: 38rem;
+    border: 15px solid #ffffff;
+    border-top-color: #50BFC3;
+    Height:100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+     margin: 0 auto;
+  -webkit-animation: girar 1.5s linear infinite;
+  -o-animation: girar 1.5 linear infinite;
+  animation: girar 1.5s linear infinite;
+}
 
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 .s-center{
     text-align: center;
 }
@@ -420,6 +462,8 @@ Box-shadow: #555 2px 2px 2px;
 #services .services{
 flex-direction: row;
 position: relative;
+
+
 }
 
 #services .img-services{
@@ -848,31 +892,50 @@ background: url(/assets/img/img1.jpg);
 
 #contact{
    
-    position: relative;
+    
 }
 
 
 #contact .contact{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    position: relative;
     
-    flex-direction: column;
     }
-
+    #contact .contact-description{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+       
+      
+    }
    
     #contact .contact-bottom{
+        margin-top: 2rem;
         display: flex;
-        flex-direction: row-reverse;
-         max-width:100%;
+        justify-content:center;
+        
+       /*  max-width:100%;
         padding: 1.5rem 2rem;
-        box-shadow: #111111 2px 2px 2px 2px;
-        border-radius: 1.5rem;
-
+       box-shadow: #111111 2px 2px 2px 2px;
+        border-radius: 1.5rem;*/
+      
     }
 
     #contact .section-img{
-        position: relative;
+        width:400px;
+        height: 300px;   
+      position: absolute;
+       
         display: flex;
-        align-items: center;
+        align-items:center;
+        justify-content: center;
+       top: 0rem;
+        right: 0.5rem;
+      
     }
+
     #contact .section-img::after{
         content: '';
         position: absolute;
@@ -887,12 +950,70 @@ background: url(/assets/img/img1.jpg);
         z-index: -50;
     }
     #contact .section-img img{
-       width:450px;
-        height: 400px;  
+       width:300px;
+        height: 200px;  
        
     }
-   
-   
+    
+    #contact .socialmedia{
+        display: flex;
+        justify-content:center;
+        flex-direction: row;
+    }
+
+    #contact .socialmedia .socialmedia-item{
+        width:290px;
+        height: 220px;
+        margin: 0rem 2rem;
+        color:var(--primario2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #191919;
+        border-radius: 10%;
+        box-shadow: #555 2px 2px 2px;
+        
+        }
+    #contact .fa-solid,.fa-brands{
+        font-size: 8rem;
+    }
+
+    #contact .socialmedia .socialmedia-item h1{
+        font-size: 1.9rem;
+        margin-bottom: 0.3rem;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+  
+
+    #contact .socialmedia .red-detail{
+        font-size: 1.9rem;
+        display: none;
+        color: #ffffff;
+        padding: 0.2rem 0;
+    }
+    #contact .socialmedia .socialmedia-item:hover .red-detail{
+        display: inline;
+        transition:0.3s ease;
+       
+        animation:animatered 0.5s ease-in-out;
+      
+      
+       
+    }
+    @keyframes animatered{
+        0%{
+           
+            transform: translateY(50px);
+        }
+        100%{
+            transform: translateY(0);
+
+        }
+    }
+    
+   /*
 
     #contact label{
       display: block; 
@@ -939,12 +1060,12 @@ background: url(/assets/img/img1.jpg);
       width: 100px;   
       cursor: pointer;
     }
-*/
+
     button p{
         font-weight: bolder;
     }
     
-  
+  */
     
 
 

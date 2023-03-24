@@ -1,9 +1,18 @@
 const menu = document.querySelector('.menu');
 const toggle = document.querySelector('.toggle');
 const icon = document.querySelector('.fa-bars');
+var contenedor = document.querySelector('#contenedor-load');
+var hero = document.getElementById("hero-img");
 
 const header = document.getElementById("header");
 
+
+ // EVENT LOANDING
+if (hero.style.visibility== "false") {
+
+}{
+    contenedor.style.display="none";
+}
 
 
  // EVENT CLOSE MENU
@@ -37,6 +46,7 @@ function backgroundNavbar(){
  // FUNCTION NAVBAR ACTIVE
  function activeNavbar(link){
     var links = document.querySelectorAll('.link-item');
+    contenedor.style.display="flex";
     links.forEach(function(item) {
         if (item.id === link) {
           item.classList.add("active");
@@ -47,7 +57,9 @@ function backgroundNavbar(){
     
  
     }
-  
+
+
+    
  /*
     var links =document.querySelectorAll('.link-item')
     for(var i=0;i<test.length;i++)
