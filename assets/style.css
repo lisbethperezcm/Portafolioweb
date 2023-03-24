@@ -31,7 +31,9 @@ html{
     height: 100%;
     width: 100%;
     position: fixed;
+    -webkit-transition: all 1 ease;
     transition: all 1 ease;
+    -o-transition: all 1 ease;
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -54,8 +56,9 @@ text-transform: uppercase;
     border-radius: 100%;
     position: absolute;
      margin: 0 auto;
-     animation: girar 1.5s linear infinite;
-
+  -webkit-animation: girar 1.5s linear infinite;
+  -o-animation: girar 1.5 linear infinite;
+  animation: girar 1.5s linear infinite;
 }
 
 @keyframes girar{
