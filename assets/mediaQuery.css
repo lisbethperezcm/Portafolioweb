@@ -131,7 +131,7 @@ max-width:4.5rem;
     }
    
     
-    #contact .fa-solid,.fa-brands{
+    #contact .fa-contact{
       font-size: 6rem;
   }
 
@@ -162,13 +162,13 @@ max-width:4.5rem;
 
     /*Header Section*/
      /*Header Section*/
-     .header{
+    /* .header{
       width: 100%;
     min-height: max-content;
     position: relative;
-    
+   
     }
-    
+
     .navbar{
       top: 0;
      z-index: 50;
@@ -231,6 +231,71 @@ max-width:4.5rem;
        height:3rem;
        line-height: 2rem;
      }
+/*
+
+/* Animate menu when opened or closed */
+.menu {
+  display: block;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background:black;
+  min-height: 100vh;
+  transform: translateX(200%);
+  z-index: 50;
+  transition:transform 0.5s ease-in-out;
+  text-align: center;
+}
+.menu.active {
+  position: fixed;
+  transform: translateX(0%);
+}
+.menu li{
+  margin:4rem 0;
+  width: 100%;
+
+ }
+ .menu li a{
+ font-size: 2.2rem;
+  color:var(--blanco);
+  padding: 10px 20px;
+  text-transform: uppercase;
+ 
+  }
+.navbar {
+  width: 100%;
+  padding:10px 0;
+  background:black;
+}
+
+.toggle{
+  display: flex;
+
+ justify-content: flex-end;
+
+ align-items: center;
+ height:1.5rem;
+ 
+ 
+ }
+ .brand .fa-bars{
+  margin-top: 1rem;
+  line-height: 3.5rem;
+ }
+.brand .icon{
+  padding:0 10px;
+}
+ .brand{
+   display: flex;
+  justify-content: space-between;
+   width: 100%;
+   height:3rem;
+ 
+   line-height: 2.5rem;
+ }
+
 
     /*About Section*/
     #about .about{
@@ -320,7 +385,7 @@ max-width:4.5rem;
 
   
       
-  }
+    }
 
     @media only screen and (max-width:700px) {
         /*
@@ -566,14 +631,7 @@ max-width:4.5rem;
   margin-bottom: -3rem;
   }
 
-#footer .footer{
- font-size: 16px;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column-reverse;
-  align-items: flex-start;
-  height: 150px;
-  }
+
   #contact .section-img{
     position: relative;
   }
@@ -592,7 +650,7 @@ max-width:4.5rem;
     border-radius: 20%;
    
     }
-#contact .fa-solid,.fa-brands{
+#contact .fa-contact{
     font-size: 6rem;
 }
 
@@ -611,6 +669,13 @@ max-width:4.5rem;
 
 
 
-
+#footer .footer{
+  font-size: 16px;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column-reverse;
+   align-items: flex-start;
+   height: 150px;
+   }
 
 }
