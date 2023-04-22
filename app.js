@@ -40,7 +40,6 @@ function activateNavbar(current) {
 
  // EVENT LOANDING
 
-if (hero.style.visibility == "false"){
 
 if (hero.style.visibility== "false") {
 
