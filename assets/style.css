@@ -59,6 +59,7 @@ margin-bottom: 2rem;
     position: relative;
      margin: 0 auto;
      animation: girar 1.5s linear infinite;
+
 }
 
 @keyframes girar{
@@ -187,6 +188,7 @@ transition:0.3s ease;
     border-bottom:2px solid #50BFC3;
 
 }
+
 .toggle{
     color: var(--blanco);
     background: none;
@@ -777,12 +779,17 @@ box-shadow: 0 25px 40px rgba(0,0,0,0.5);
     text-align: center;
     line-height: 1.6rem;
     margin: 0 5px;
+    transition:0.3s ease;
+    transition-property:background-color, color;
     
    
 }
-
-
-
+#portfolio .item-button:hover{
+background-color:var(--oscuro);
+transition:0.3s ease;
+box-shadow:#1f2c38 1px 1px 1px;
+color: var(--primario);
+}
 /*
 #portfolio .category{
    max-width: 45%;
@@ -994,6 +1001,7 @@ background: url(/assets/img/img1.jpg);
         color: #ffffff;
         padding: 0.2rem 0;
     }
+
     #contact .button:hover{
         color: var(--blanco);
     background-color: var(--secundario);

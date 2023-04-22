@@ -248,7 +248,7 @@ max-width:4.5rem;
   transition:transform 0.5s ease-in-out;
   text-align: center;
 }
-.menu.active {
+.menu.toggle-active{
   position: fixed;
   transform: translateX(0%);
 }
@@ -262,6 +262,7 @@ max-width:4.5rem;
   color:var(--blanco);
   padding: 10px 20px;
   text-transform: uppercase;
+  
  
   }
 .navbar {

@@ -4,8 +4,8 @@ const navbar = document.querySelector('.navbar');
 const brand = document.querySelector('.brand');
 
 const icon = document.querySelector('.fa-bars');
-var contenedor = document.querySelector('#contenedor-load');
-var hero = document.getElementById("hero-img");
+/*var contenedor = document.querySelector('#contenedor-load');
+var hero_image = document.getElementById("hero-img");*/
 
 const header = document.getElementById("header");
 
@@ -20,32 +20,44 @@ window.addEventListener('scroll', () => {
       current = section.getAttribute('id');
     }
   });
-  if (window.innerWidth > 800) {
+ if (window.innerWidth > 800){
   activateNavbar(current);}
 });
 
+// EVENT ADD COLOR ACTIVE NAVBAR
 function activateNavbar(current) {
   const links = document.querySelectorAll('.link-item');
-  
   links.forEach((link) => {
-
     link.classList.remove('active');
-
-    if (link.href === current) {
+    if (link.href.endsWith(current)) {
       link.classList.add('active');
     }
   });
-
 }
 
  // EVENT LOANDING
 
+ // Mostrar efecto de carga
+document.body.style.overflow = 'hidden'; // Evitar scroll
+var loading = document.getElementById('contenedor-load');
+loading.style.display = 'flex';
 
-if (hero.style.visibility== "false") {
+// Ocultar efecto de carga cuando se carguen todos los elementos
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    loading.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Activar scroll
+  }, 1000); // Activar scroll
+});
+
+/*
+
+if (hero_image.style.visibility == "false"){
 
 }else{
     contenedor.style.display="none";
 }
+*/
 
 toggleButton.addEventListener('click', toggleMenu);
 menu.addEventListener('click', toggleMenu);
@@ -67,7 +79,7 @@ backgroundNavbar();
 });
 /*inputs.addEventListener("click", removePlace);*/
 
-// EVENT ADD COLOR ACTIVE NAVBAR
+
 /*
 menu.addEventListener("click", activeNavbar);*/
 //links.addEventListener("click",activeNavbar);
@@ -127,13 +139,13 @@ function backgroundNavbar(){
         }; 
   */
 
-
+ // FUNCTION CLOSE/OPEN MENU
         function toggleMenu() {
-          if (menu.classList.contains('active')) {
-            menu.classList.remove('active');
+          if (menu.classList.contains('toggle-active')) {
+            menu.classList.remove('toggle-active');
           
           } else {
-            menu.classList.add('active');
+            menu.classList.add('toggle-active');
             navbar.style.position="fixed";
             
           /*  brand.style.transform = 'translateX(-50%)';*/
