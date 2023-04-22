@@ -42,6 +42,8 @@ function activateNavbar(current) {
 
 if (hero.style.visibility == "false"){
 
+if (hero.style.visibility== "false") {
+
 }else{
     contenedor.style.display="none";
 }

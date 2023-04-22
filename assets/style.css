@@ -32,7 +32,9 @@ html{
     height: 100%;
     width: 100%;
     position: fixed;
+    -webkit-transition: all 1 ease;
     transition: all 1 ease;
+    -o-transition: all 1 ease;
     z-index: 1000;
     display: flex;
     justify-content: center;
