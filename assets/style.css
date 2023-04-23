@@ -27,7 +27,7 @@ html{
 
    
 }
-#contenedor-load{
+#loading-container{
     background-color:#1f2c38;
     height: 100%;
     width: 100%;
@@ -45,16 +45,35 @@ html{
     opacity: 1;
     
 }
-#contenedor-load h1{
+#loading-container h1{
 text-transform: uppercase;
-margin-bottom: 2rem;
+margin-bottom: 2.5rem;
+font-weight:300;
+position: relative;
 }
+#loading-container h1::after{
+    content: "...";
+    position: absolute;
+    top: 48%;
+    right: -19px;
+    transform: translateY(-50%);
+    font-size: 30px;
+    opacity: 0;
+    animation: dots 2s linear infinite;
+}
+@keyframes dots {
+ 0% { opacity: 0; }
+ 25% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+ 75% { opacity: 0.9; }
+100% { opacity: 0; }
+      }
 #load{
     
-    border: 15px solid #ffffff;
+    border: 0.8rem solid #ffffff;
     border-top-color: #50BFC3;
-    Height:100px;
-    width: 100px;
+    Height:90px;
+    width: 90px;
     border-radius: 100%;
     position: relative;
      margin: 0 auto;
@@ -1003,12 +1022,10 @@ background: url(/assets/img/img1.jpg);
     }
 
     #contact .button:hover{
-        color: var(--blanco);
-    background-color: var(--secundario);
-    box-shadow:#1f2c38 1px 1px 1px;
+      background-color:var(--oscuro);
         transition:0.3s ease;
-    
-      
+        box-shadow:#555 1px 1px 1px;
+        color: var(--primario);
        
     }
     @keyframes animatered{
@@ -1081,12 +1098,14 @@ background: url(/assets/img/img1.jpg);
 
 
 #footer .footer{
+height: 20rem;
 color: #8e8e8e;
 background-color: rgba(0, 0, 0, 0.9);
 padding: 30px;
 font-size: 14px;
 display: flex;
-justify-content: center;
+flex-direction: row;
+justify-content:space-evenly;
 align-items: center;
 }
 #footer a{
@@ -1094,6 +1113,31 @@ align-items: center;
 }
 #footer a:hover{
     color:var(--blanco);
+}
+#footer .footer-brand{
+  
+   
+    flex-direction: column;
+   
+  }
+
+#footer .footer-list{
+    font-size: 14px;
+    flex-direction: column;
+   
+}
+
+#footer .fa-footer{
+    color: #00BFA6;
+    font-size: 1.8rem;
+}
+
+#footer .footer-legal{
+    padding: 0.3rem 0;
+    text-align: center;
+    color: #ffffff;
+    font-weight:300;
+    background-color: #1f2c38;    
 }
 /*
 aside {

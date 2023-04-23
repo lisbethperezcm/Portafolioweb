@@ -247,6 +247,7 @@ max-width:4.5rem;
   z-index: 50;
   transition:transform 0.5s ease-in-out;
   text-align: center;
+  outline: none;
 }
 .menu.toggle-active{
   position: fixed;
@@ -288,7 +289,7 @@ max-width:4.5rem;
 .brand .icon{
   padding:0 10px;
 }
- .brand{
+.navbar .brand{
    display: flex;
   justify-content: space-between;
    width: 100%;
@@ -365,7 +366,7 @@ max-width:4.5rem;
        
     }
      
-      
+      /*
       #contact input{
         width:500px; 
         height: 40px; 
@@ -375,12 +376,12 @@ max-width:4.5rem;
         width: 500px; 
         height: 150px; 
       }
-      
+      /*
       button{
         height: 45px;  
         width: 500px;   
       }
-      
+     */
   
    
 
@@ -394,7 +395,7 @@ max-width:4.5rem;
     * Estilos Generales */
 
     .button{
-      font-size: 1.5rem;
+     
       margin-bottom: 0.5rem;
     }
       
@@ -668,15 +669,31 @@ max-width:4.5rem;
   
 }
 
-
-
 #footer .footer{
-  font-size: 16px;
+  font-size: 14px;
    display: flex;
-   justify-content: flex-end;
-   flex-direction: column-reverse;
-   align-items: flex-start;
-   height: 150px;
+   flex-direction: column;
+   justify-content: space-evenly;
+  
+ 
    }
 
+   #footer .footer-list{
+
+    justify-content: flex-end;
+  
+}
+#footer .footer-brand{
+justify-content: flex-start;
+width: 100%;
+}
+#footer .footer-contact{
+
+  width: 100%;
+  justify-content: center;
+
+}
+#footer .footer-list{
+  padding: 0 1.5rem;
+}
 }

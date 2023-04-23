@@ -2,14 +2,17 @@ const toggleButton = document.querySelector('.toggle');
 const menu = document.querySelector('#menu');
 const navbar = document.querySelector('.navbar');
 const brand = document.querySelector('.brand');
-
 const icon = document.querySelector('.fa-bars');
-/*var contenedor = document.querySelector('#contenedor-load');
-var hero_image = document.getElementById("hero-img");*/
-
+var loading = document.getElementById('loading-container');
 const header = document.getElementById("header");
-
 const sections = document.querySelectorAll('section');
+
+
+
+//EVENTS
+
+toggleButton.addEventListener('click', toggleMenu);
+menu.addEventListener('click', toggleMenu);
 
 window.addEventListener('scroll', () => {
   let current = '';
@@ -24,7 +27,9 @@ window.addEventListener('scroll', () => {
   activateNavbar(current);}
 });
 
-// EVENT ADD COLOR ACTIVE NAVBAR
+
+
+// FUNCTION ADD COLOR ACTIVE NAVBAR
 function activateNavbar(current) {
   const links = document.querySelectorAll('.link-item');
   links.forEach((link) => {
@@ -39,7 +44,6 @@ function activateNavbar(current) {
 
  // Mostrar efecto de carga
 document.body.style.overflow = 'hidden'; // Evitar scroll
-var loading = document.getElementById('contenedor-load');
 loading.style.display = 'flex';
 
 // Ocultar efecto de carga cuando se carguen todos los elementos
@@ -47,7 +51,7 @@ window.addEventListener('load', function() {
   setTimeout(function() {
     loading.style.display = 'none';
     document.body.style.overflow = 'auto'; // Activar scroll
-  }, 1000); // Activar scroll
+  }, 1000);
 });
 
 /*
@@ -59,8 +63,7 @@ if (hero_image.style.visibility == "false"){
 }
 */
 
-toggleButton.addEventListener('click', toggleMenu);
-menu.addEventListener('click', toggleMenu);
+
  // EVENT CLOSE MENU
  /*
 toggle.addEventListener("click",closeMenu);
