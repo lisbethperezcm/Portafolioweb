@@ -455,7 +455,7 @@
     }
     
     #hero .silueta2::after{
-      transform: translate(-130%, 83%);
+      transform: translate(-120%, 110%);
       width: 16.5rem;
       height:20rem;
     }
