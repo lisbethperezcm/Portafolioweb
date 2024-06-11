@@ -1,0 +1,468 @@
+/****
+* P A N T A L L A S    G R A N D E S //////////////////////////////
+*******/
+
+@media only screen and (max-width: 1350px) {
+
+ 
+  #portfolio .portfolio-items{
+    grid-template-columns: repeat(2, 1fr); /* Define cuatro columnas con el mismo ancho */
+    grid-gap: 2rem; 
+    justify-content: center;
+}
+  }
+
+
+  /*
+***
+* P A N T A L L A S    M E D I A S //////////////////////////////
+***
+***
+*/
+
+  @media only screen and (max-width: 990px) {
+
+
+    /* Estilos generales  */
+    .container{
+      width:100%;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    /*Header Section*/
+  .menu li a{
+    font-size: 1.5rem;
+     
+ }
+
+
+    .skills-details{
+     
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Define cuatro columnas con el mismo ancho */
+      grid-gap: 10px;
+      
+      
+    
+    }
+   
+    #about .about-info .section-descripcion{
+  
+      margin: 0 auto;
+  }
+
+  #portfolio .portfolio-items{
+    grid-template-columns: repeat(2, 1fr); /* Define cuatro columnas con el mismo ancho */
+    grid-gap: 2rem; /* Espacio entre las celdas */
+    justify-content: center;
+    margin: auto;
+
+  
+}
+#portfolio .item{
+
+  width:40rem;
+  height: 30rem;
+}
+}
+
+  /*
+***
+* P A N T A L L A S    M E D I A N A S   T A  B L E S //////////////////////////////
+***
+***
+*/
+  @media only screen and (max-width:800px) {
+
+    .container{
+      max-width: 100%;
+    }
+    #hero h1{
+     
+      font-size: 5rem;
+    }
+
+      
+      .menu {
+        display: block;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        padding: 2rem;
+        background:#202020;
+        min-height: 100vh;
+        transform: translateX(200%);
+        z-index: 50;
+        transition:transform 0.5s ease-in-out;
+        text-align: center;
+        outline: none;
+      }
+      .menu.toggle-active{
+        position: fixed;
+        transform: translateX(0%);
+        z-index: -50;
+      }
+      .menu li{
+        margin:4rem 0;
+        width: 100%;
+      
+       }
+       .menu li a{
+       font-size: 2.2rem;
+        color:var(--blanco);
+        padding: 10px 20px;
+        text-transform: uppercase;
+        
+     
+        }
+      .navbar {
+        
+        width: 100%;
+        padding:10px 0;
+        background:#202020;
+        height: 6.15rem;
+        z-index: 50;
+        position: fixed;
+      }
+      
+      .toggle{
+        display: flex;
+      
+       
+   
+       
+       }
+       .brand{
+    
+        width: 100%;
+        justify-content: space-between;
+        line-height: 0;
+        align-items: center;
+       }
+       .brand-icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       .icon{
+       
+        line-height: 0;
+       }
+
+       header::after {
+       display: none
+      }
+      .contact{
+        justify-content: center;
+        margin: 0 auto;
+
+        bottom: 12rem;
+        right: 14rem;
+      }
+
+
+       
+    About me */
+
+    #about .about{
+      flex-direction: column;
+    }
+    .about-description{
+      flex-direction: column;
+      max-width:90%;
+    }
+
+    #about .about-info .section-descripcion{
+      max-width: 80%;
+      margin: 0 auto;
+  }
+    
+ 
+
+  .section-img{
+    max-width: 45%;
+  
+    margin: 0 auto;
+    margin-bottom: 7rem;
+  }
+      
+
+      #portfolio .portfolio-items{
+        grid-template-columns: repeat(1, 1fr); 
+        grid-gap: 2rem; 
+        justify-content: center;
+        margin: auto;
+      
+      
+      }
+      #portfolio .item{
+
+        width:45rem;
+        height: 30rem;
+      }
+
+
+      
+   
+    }
+
+
+    @media only screen and (max-width:700px) {
+       
+      *{
+        outline: none;
+       }
+      
+  
+      
+      .title{
+        width: 90%;
+        font-size: 3.5rem;
+      
+       
+       margin: 0 auto;
+       margin-bottom: 5rem;
+       /* margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;*/
+     
+    }
+    .subtitle{
+      font-size: 1.9rem;
+        }
+    .section-descripcion{
+      font-size:1.5rem;
+        } 
+  
+   
+
+      .section-img{
+        max-width: 65%;
+      
+     
+      }
+
+
+
+
+
+
+ .img-services {
+        
+       
+         display: none;
+        
+        }
+         .skills-details{
+          margin-top: -7rem;
+          max-width: 90%;
+        
+          grid-template-columns: repeat(2, 1fr); /* Define cuatro columnas con el mismo ancho */
+          
+  
+         }
+        
+
+        .skill-item {
+          font-size:5rem;
+         
+        }
+
+        .skills-description{
+          flex-direction: column;
+    
+        }
+        
+
+    
+        .skill-item {
+          font-size:5rem;
+        
+         
+        }
+
+      }
+   
+   
+       
+
+    
+
+
+
+      @media only screen and (max-width:550px) {
+
+      /*Portfolio Section*/
+    
+    /* #portfolio .portfolio{
+    display: flex;
+    flex-direction: column;
+     margin-bottom: 5rem;
+     height: max-content;
+    }
+
+
+    #portfolio .porftolio-items{
+    display: flex;
+    flex-direction: column;
+    }
+
+    #portfolio .item{
+ 
+   
+    }
+ */
+    
+    #portfolio .item{
+
+      width:32rem;
+      height: 20rem;
+     
+      
+      }
+      
+
+
+#portfolio .portfolio-items{
+  grid-template-columns: repeat(1, 1fr); /* Define cuatro columnas con el mismo ancho */
+
+
+}
+    #footer .f-container{
+      
+      max-width: 100%;
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+
+
+  }
+  .footer-contact{
+    padding: 1rem;
+    max-width: 100%;
+    align-items: center; 
+    margin: 0 auto;
+  }
+ 
+  .footer-brand{
+    align-items: flex-start;
+    padding: 0.20rem 0;
+   
+  }
+
+  .contact-item{
+    
+    font-size:3.7rem;
+}
+#footer .footer-legal{
+
+  
+  text-align: center;
+ 
+}
+}
+
+
+
+
+
+  /* M E D I A    Q U E R Y   S I L U E T A S  /// */
+
+
+  @media only screen and (max-width: 1350px) {
+
+  
+    #hero .silueta::after{
+  
+        transform: translate(-20%, -20%); 
+      }
+      
+      #hero .silueta2::after{
+        transform: translate(-230%, 50%);
+      }
+      
+      #hero .silueta3::after{
+        transform: translate(110%, -110%);
+       
+      }
+  
+  }
+
+  @media only screen and (max-width: 990px) {
+  
+  
+  
+    #hero .silueta::after{
+      width: 38rem;
+      height: 40rem;
+      transform: translate(-20%, -10%); 
+    }
+    
+    #hero .silueta2::after{
+      transform: translate(-180%, 50%);
+      width: 24.5rem;
+      height:24rem;
+    }
+    
+    #hero .silueta3::after{
+      transform: translate(70%, -110%);
+      width: 30.5rem;
+    height:30rem;
+    }
+}
+
+
+@media only screen and (max-width:755px) {
+        
+  
+       
+    #hero .silueta::after{
+      width: 35rem;
+      height: 40rem;
+      transform: translate(-30%, -10%); 
+    }
+    
+    #hero .silueta2::after{
+      transform: translate(-150%, 53%);
+      width: 22.5rem;
+      height:24rem;
+    }
+    
+    #hero .silueta3::after{
+      transform: translate(60%, -110%);
+      width: 30.5rem;
+    height:30rem;
+
+    }
+  }
+
+  
+  
+  @media only screen and (max-width:550px) {
+    
+  
+ 
+    #hero .silueta::after{
+      width: 28rem;
+      height: 35rem;
+      transform: translate(10%, -10%); 
+    }
+    
+    #hero .silueta2::after{
+      transform: translate(-130%, 83%);
+      width: 16.5rem;
+      height:20rem;
+    }
+    
+    #hero .silueta3::after{
+      transform: translate(30%, -145%);
+      width: 30.5rem;
+    height:23rem;
+    }
+  }

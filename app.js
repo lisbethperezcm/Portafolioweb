@@ -5,8 +5,10 @@ const brand = document.querySelector('.brand');
 const icon = document.querySelector('.fa-bars');
 var loading = document.getElementById('loading-container');
 const sections = document.querySelectorAll('section');
+const portfolioItems = document.querySelector(".portfolio-items");
 
 
+validar_elements();
 
 //EVENTS
 
@@ -32,15 +34,15 @@ window.addEventListener('scroll', () => {
  // EVENT LOANDING
 
  // Mostrar efecto de carga
-document.body.style.overflow = 'hidden'; // Evitar scroll
+// document.body.style.overflow = 'hidden'; // Evitar scroll
 
-// Ocultar efecto de carga cuando se carguen todos los elementos
-window.addEventListener('load', function() {
-  setTimeout(function() {
-    loading.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Activar scroll
-  }, 1000);
-});
+// // Ocultar efecto de carga cuando se carguen todos los elementos
+// window.addEventListener('load', function() {
+//   setTimeout(function() {
+//     loading.style.display = 'none';
+//     document.body.style.overflow = 'auto'; // Activar scroll
+//   }, 1000);
+// });
 
  // EVENT CHANGE NAVBAR BACKGROUND
 document.addEventListener("scroll",() => {
@@ -61,15 +63,39 @@ function activateNavbar(current) {
   });
 }
  // FUNCTION NAVBAR BACKGROUND
-function backgroundNavbar(){
-    if( window.scrollY < 100){
-        navbar.style.backgroundColor="transparent";
-    }else if( window.scrollY > 100){
-        navbar.style.backgroundColor="#000000";
-    }  
+// function backgroundNavbar(){
+//     if( window.scrollY < 100){
+//         navbar.style.backgroundColor="transparent";
+//     }else if( window.scrollY > 100){
+//         navbar.style.backgroundColor="#323232";
+        
+        
+//     }  
+// }
+
+ //ESCRIBIR NOMBRE
+
+ const nombreCompleto = "LISBETH..."; // Nombre completo que deseas escribir
+const velocidadEscritura = 150; // Velocidad de escritura en milisegundos
+
+let i = 0;
+
+function escribirNombre() {
+    if (i < nombreCompleto.length) {
+        document.getElementById("nombre").textContent += nombreCompleto.charAt(i);
+        i++;
+        setTimeout(escribirNombre, 100);
+    }
+
+    
+  
 }
 
- 
+
+// Llama a la función para empezar a escribir el nombre cuando se cargue la página
+window.onload = escribirNombre;
+
+
  // FUNCTION CLOSE/OPEN MENU
         function toggleMenu() {
           if (menu.classList.contains('toggle-active')) {
@@ -84,4 +110,26 @@ function backgroundNavbar(){
         }
         
 
+        
+    
+         
+      
+         
+        function validar_elements(){
+              const items = document.querySelectorAll(".item");
+      
+              if (items.length === 1) {
+                  portfolioItems.classList.add('centered');
+                  
+                console.log(portfolioItems);
+              }else {
 
+                portfolioItems.classList.remove('centered');
+                
+                
+                portfolioItems.style.display="grid";
+
+              }
+            
+          
+      }

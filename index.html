@@ -9,9 +9,11 @@
 
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> <script src="https://kit.fontawesome.com/4ec4f15ca5.js" crossorigin="anonymous"></script>
  
-
+ <link rel="icon" href="/assets/icon_portfolio.png" type="image/png">
   <link rel="stylesheet" href="/assets/style.css">
-  <link rel="stylesheet" href="/assets/mediaQuery.css">
+
+ <link rel="stylesheet" href="/assets/mediaQuery2.css">
+
   <script type="text/javascript" src="app.js" defer></script>
 
 
@@ -20,24 +22,18 @@
 </head>
 
 <body>
-  <div id="loading-container">
 
-  
-<h1>Loanding</h1>
-  
-    <div id="load">
-      
-    </div>
-
-  
-  </div> 
-  <!-- H E R O  S E C T I O N  <header id="header" class="header">-->
+  <!-- H E R O  S E C T I O N  -->
   <Section id="hero" class="header">
    
     <header class="navbar">
       <div class="brand">
+        <div class="brand-icons">
+        <img src="/assets/icon_portfolio.png" id="icon-portfolio" class="icon-portfolio" alt="" srcset="">
+
         <h2 class="icon"><span>L</span>P</h2>
     
+      </div>
         <button class="toggle">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -47,31 +43,46 @@
         <ul id="menu" class="menu">
           <li><a href="#hero" class="link-item">Home</a></li>
           <li><a href="#about" class="link-item">About me</a></li>
-          <li><a href="#services" class="link-item">Services</a></li>
+          <li><a href="#skills" class="link-item">Skills</a></li>
           <li><a href="#portfolio" class="link-item">Portfolio</a></li>
-          <li><a href="#contact" class="link-item">Contact</a></li>
+          
         </ul>
       </nav>
     </header>
+  
     
-
 
     <div class="hero container">
 
-      <div>
-        <h1>Hello, <span class="name">I'm Lisbeth...</span> </h1>
-
+      <div id="myname">
+        <h1>I'm</h1>
+        <h1 id="nombre"></h1>
+        
       </div>
-      <div>
+      
+      <div class="silueta-container">
+        
+        <div class="silueta2"></div> 
+        <div class="silueta"></div>
+      
+       <div class="silueta3"></div>
+      </div>
+  
 
-        <div class="loader">
-          <div class="min-loader">
+        <div class="contact">
+          <div class="contact-item">
+            <a href="mailto:lisbethperezcm@gmail.com" class="contact-link"><i class="fa-solid fa-square-envelope"> </i></a> </div>
 
-          </div>
+          <div class="contact-item">
+            <a href="https://www.linkedin.com/in/lisbeth-p%C3%A9rez-cm07/" class="contact-link"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-github contactfab"></i>
+            </div>
         </div>
       </div>
-    </div>
-
+  
+     
   </Section>
   <!-- E N D  H E R O  S E C T I O N ---------------->
 
@@ -85,77 +96,63 @@
 
     <div class="about container">
 
-      <div class="section-img">
-
-        <img src="/assets/services2.svg" id="hero-img" class="about-img" alt="" srcset="">
-
-
-      </div>
+      <h1 class="section-title title">About me</h1>     
 
       <div class="about-description">
+        <div class="section-img">
 
-        <div class="about-top">
-          <h1 class="section-title title">ABOUT ME</h1>
-          <div id="imgabout" class="img-aboutme">
-            <img src="/assets/me.png" class="img-me" alt="" srcset="">
-          </div>
+          <img src="/assets/services2.svg" id="hero-img" class="about-img" alt="" srcset="">
         </div>
 
-        <div class="about-bottom">
+
+        
 
           <div class="about-info">
-            <h1 class="title-info subtitle">I'm Quality Assurance Analyst & Software Developer </h1>
+
     
             <div class="section-descripcion">
-              <p class="section-descripcion">
-                My name is Lisbeth Perez, I graduated as Software Developer. 
-             I specialized in the area of ​​quality assurance as QA Analyst.
-               
+
+              <h1 class="title-info subtitle">Hi there, I´m <span class="name">Lisbeth Pérez</span> !</h1>
+              <p class="section-paragh">
+                I´m Systems Engineering Student and I graduated as a Software Developer
               </p>
-              <p class="section-descripcion">
-                I'm passionate about tecnology!! . I'm a proactive person and results 
-                oriented.
+              <p class="section-paragh">
+                I specialize in Software Quality Assurance as a QA Analyst, where I have the opportunity to uncover issues, propose solutions, and suggest improvements to enhance software quality.
               </p>
-              <a href="#" type="button" class="button cta">Download CV <i class="fa-solid fa-circle-down"></i> </a>
-              <!-- <a href="https://www.linkedin.com/in/lisbeth-p%C3%A9rez-cm07/" type="button"
-                class="button cta linkd">Perfil <i class="fa-solid fa-eye"></i> </a> -->
+              <a href="#" type="button" class="button cta">CV <i class="fa-solid fa-circle-down"></i> </a>
+              <a href="https://www.linkedin.com/in/lisbeth-p%C3%A9rez-cm07/" type="button"
+                class="button cta linkd">Perfil <i class="fa-solid fa-eye"></i> </a>
             </div>
           </div>
         </div>
+        
+        
       </div>
-    </div>
+   
   </section>
 
   <!-- E N D A B O U T  S E C T I O N ---------------->
 
   <!-- S E R V I C E S   S E C T I O N-->
-  <section id="services">
+  <section id="skills">
 
-    <div class="services container">
+    <div class="skills container">
 
-      <div class="section-img">
-        <img src="/assets/developer3.svg" alt=" " srcset="" class="img-services">
-      </div>
+    
+<div class="section-title">
+      <h1 class="section-title title">Skills</h1>
+    </div>
 
-      <div class="services-description">
-        <div class="services-top">
-          <h1 class="section-title title">SERVICES</h1>
-          <p></p>
+      <div class="skills-description">
+    
+        <div class="section-img">
+          <img src="/assets/developer3.svg" alt=" " srcset="" class="img-services">
         </div>
-        <div class="services-bottom">
-          <div class="service-item">
+        
+            <div class="skills-group">
 
-            <div class="icon s-center"> <i class="fa-solid fa-laptop-code"></i></div>
-            <h2 class="item-title subtitle">Web Developer</h2>
-            <p class="section-descripcion s-center">I have experience programing projects with PHP, HTML, CSS and
-              Javascript.
-            </p>
-
-
-            <h1 class="skill-title">Skills</h1>
-
-            <div class="skills s-center">
-
+              <div class="skills-details">
+                
               <div class="skill-item">
                 <i class="fab fa-html5"></i>
                 <h1>HTML</h1>
@@ -168,63 +165,46 @@
 
               <div class="skill-item">
                 <i class="fab fa-js"></i>
-                <h1>JAVASCRIPT</h1>
+                <h1>javascript</h1>
               </div>
 
-              <div class="skill-item">
-                <i class="fab fa-php"></i>
-                <h1>PHP</h1>
-              </div>
+            
 
               <div class="skill-item">
                 <i class="fa-solid fa-database"></i>
                 <h1>Database</h1>
               </div>
 
-            </div>
-          </div>
-
-          <div class="service-item">
-
-            <div class="icon s-center"><i class="fa-solid fa-file-circle-check"></i></div>
-            <h2 class="item-title subtitle">Quality Analyst</h2>
-            <p class="section-descripcion s-center">I have experience working as QA Analyst, I have knowledge
-              about Manual Testing and Automation Testing.
-
-            </p>
-            <h1 class="skill-title">Skills</h1>
-
-            <div class="skills s-center">
-
               <div class="skill-item">
                 <i class="fa-solid fa-file-lines"></i>
-                <h1>FUNCTIONAL TESTING</h1>
+                <h1>Functional testing</h1>
               </div>
-              <div class="skill-item">
+              <!-- <div class="skill-item">
                 <i class="fa-solid fa-file-pen"></i>
-                <h1>TEST CASES</h1>
+                <h1>Test cases</h1>
               </div>
               <div class="skill-item">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <h1>EXPLORATORY TESTING</h1>
-              </div>
+                <h1>Exploratory testing</h1>
+              </div> -->
               <div class="skill-item">
                 <i class="fa-solid fa-bug-slash"></i>
-                <h1>BUG REPORTS</h1>
+                <h1>Bug reports</h1>
               </div>
 
               <div class="skill-item">
                 <i class="fa-solid fa-arrows-rotate"></i>
-                <h1>AUTOMATION TESTING</h1>
+                <h1>Automation testing</h1>
+              </div>
+              <div class="skill-item">
+                <i class="fa-solid fa-microchip"></i>
+                <h1>Api testing</h1>
               </div>
 
-
-
+            </div>
 
             </div>
-          </div>
-
-        </div>
+         
 
       </div>
     </div>
@@ -237,14 +217,14 @@
   <!-- P O R T F O L I O   S E C T I O N-->
   <section id="portfolio">
     <div class="portfolio container">
-      <div class="portfolio-top">
-        <h1 class="section-title title">PROJECTS</h1>
+     
+        <h1 class="section-title title">Portfolio</h1>
 
-      </div>
+     
 
-      <div class="portfolio-bottom">
+      <div class="portfolio-description">
 
-        <div class="porftolio-items">
+        <div id="portfolio-items" class="portfolio-items centered">
 
 
           <div class="item">
@@ -256,25 +236,63 @@
               <h1 class="title-item">Blog Analista Qa</h1>
               <p>En este blog realizado los analisis a diferentes sitios web.</p>
               <div class="item-buttons">
-                <a href="#" class="item-button">Demo <i class="fa-solid fa-earth-americas"></i> </a>
-                <a href="#" class="item-button">codigo <i class="fa-brands fa-github"></i> </a>
+                <a href="#" class="item-button"><i class="fa-solid fa-eye"></i></i></a>
+                <a href="#" class="item-button"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
+
+            
           </div>
          
+         
+          <div class="item">
+            <div class="imgItem">
+              <img src="./assets/img/qaBlog.png" alt="" srcset="">
+            </div>
+            <div class="item-info">
 
+              <h1 class="title-item">Blog Analista Qa</h1>
+              <p>En este blog realizado los analisis a diferentes sitios web.</p>
+              <div class="item-buttons">
+                <a href="#" class="item-button"><i class="fa-solid fa-eye"></i></i></a>
+                <a href="#" class="item-button"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+
+            
+          </div>
+         
+          <div class="item">
+            <div class="imgItem">
+              <img src="./assets/img/qaBlog.png" alt="" srcset="">
+            </div>
+            <div class="item-info">
+
+              <h1 class="title-item">Blog Analista Qa</h1>
+              <p>En este blog realizado los analisis a diferentes sitios web.</p>
+              <div class="item-buttons">
+                <a href="#" class="item-button"><i class="fa-solid fa-eye"></i></i></a>
+                <a href="#" class="item-button"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+
+            
+          </div>
+         
+            
+          </div>
+         
     
+         
+
+            
+
 
 
           </div>
 
-
-
-
-
-        </div>
-      </div>
-
+          
+       
 
 
 
@@ -287,86 +305,42 @@
   </section>
 
 
-  <!-- E N D  P O R T F O L I O   S E C T I O N
----------------->
+  <!-- E N D  P O R T F O L I O   S E C T I O N---------------->
   
 
-<!-- C O N T A C T  S E C T I O N -->
-
-  <section id="contact">
-
-    <div class="contact container">
-      <div class="section-img">
-
-        <img src="/assets/contact.svg" alt="" srcset="">
-       </div>
-      
-    
-<div class="contact-description">
-  <div class="contact-top">
-    <h1 class="section-title title">CONTACT ME</h1>
-
-  </div>
- <div class="contact-bottom">
- 
-
- 
-
-   <div class="socialmedia">
-
-    <div class="socialmedia-item">
-      <i class="fa-brands fa-linkedin fa-contact"></i>
-      <h1>linkedin</h1>
-      <p class="red-detail">Lisbeth Perez</p>
-      <a href="https://www.linkedin.com/in/lisbeth-p%C3%A9rez-cm07/" class="button">Ver Perfil</a>
-    </div>
-
-    <div class="socialmedia-item">
-      <i class="fa-solid fa-envelope fa-contact"></i>
-      <h1>Gmail</h1>
-      <p class="red-detail">Lisbethperezcm@gmail.com</p>
-      <a href="mailto:lisbethperezcm@gmail.com" class="button">Enviar Mensaje</a>
-    </div>
-    
-    <div class="socialmedia-item">
-      <i class="fa-brands fa-square-whatsapp fa-contact"></i>
-      <h1>Whatsaap</h1>
-      <p class="red-detail">(809)-259-1148</p>
-      <a href="https://wa.me/+18092591148" target="_blank" class="button">Enviar mensaje</a>
-    </div>
-
-   </div>
-  </div>
-
-</div>
-</div>
-
-</div>    
-
-  </section>
-
-  <!-- E N D  C O N T A C T  S E C T I O N ---------------->
 
 
 <!-- F O O T E R  S E C T I O N -->
 <footer id="footer">
-  <div class="footer">
-    <div class="footer-brand brand">
+  <div class="footer f-container">
+    <div class="footer-brand">
+      <div class="brand">
+      <img src="/assets/icon_portfolio.png" id="icon-portfolio" class="icon-portfolio" alt="" srcset="">
       <h2 class="footer-logo icon"><span>L</span>P</h2>
-
-      <p class="footer-tagline">Analista de Calidad de Software</p>
     </div>
+      <div>
+        <p class="footer-tagline">Lisbeth Pérez</p>
+        <p class="footer-tagline">Software Quality Analyst</p>
+      </div>
+    </div>
+  
+   
     <div class="footer-contact">
-      <h3 class="footer-heading">Contact</h3>
-      <ul class="footer-list">
-        <li><i class="fa-solid fa-phone fa-footer"></i> (809) -259-1148</li>
-        <li><i class="fa-solid fa-envelope fa-footer"></i> Lisbethperezcm@gmail.com</li>
-        <li><i class="fa-brands fa-linkedin fa-footer"></i> Lisbeth Perez</li>
-      </ul>
+      <div class="contact-item">
+        <a href="mailto:lisbethperezcm@gmail.com" class="contact-link"><i class="fa-solid fa-square-envelope"> </i></a> </div>
+      
+      <div class="contact-item">
+        <a href="https://www.linkedin.com/in/lisbeth-p%C3%A9rez-cm07/" class="contact-link"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      <div class="contact-item">
+        <i class="fa-brands fa-github contactfab"></i>
+        </div>
     </div>
-  </div>
+    
+    </div>
+  
   <div class="footer-legal">
-    <p>© 2022 Lisbeth Perez. Todos los derechos reservados.</p>
+    <p>© Lisbeth Perez. All Rights Reserved 2022</p>
   </div>
 </footer>
  
